@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homepharma"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pharmamedicament"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Medicament" />
+
+        <item
+            android:id="@+id/nav_pharmamap"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_pharmacall"
+            android:icon="@drawable/ic_call_white_24dp"
+            android:iconTint="@android:color/white"
+            android:title="Call Pharmacy" />
+    </group>
+
+</menu>

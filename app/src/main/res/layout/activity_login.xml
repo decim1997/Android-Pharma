@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:ignore="ContentDescription">
+
+
+
+
+
+
+ <Button
+     android:id="@+id/sign_in_facebook"
+     android:layout_width="42dp"
+     android:layout_height="38dp"
+     android:background="@drawable/facebook"
+     android:textAllCaps="false"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintRight_toLeftOf="@+id/guideline"
+     android:layout_marginTop="30dp"
+     android:layout_marginLeft="30dp"
+     />
+
+ <Button
+     android:id="@+id/sign_in_twitter"
+     android:layout_width="42dp"
+     android:layout_height="38dp"
+     android:background="@drawable/twitter"
+     android:textAllCaps="false"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintLeft_toRightOf="@+id/sign_in_facebook"
+     app:layout_constraintRight_toLeftOf="@+id/sign_in_gmail"
+     android:layout_marginTop="30dp"
+     />
+
+ <android.support.constraint.Guideline
+     android:id="@+id/guideline"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     app:layout_constraintGuide_percent="0.4"/>
+
+ <Button
+     android:layout_width="42dp"
+     android:layout_height="48dp"
+     android:id="@+id/sign_in_gmail"
+     android:background="@drawable/googleplus"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintLeft_toRightOf="@+id/guideline"
+     android:layout_marginTop="30dp"
+     android:layout_marginRight="30dp"
+
+     />
+
+ <EditText
+     android:id="@+id/login"
+     android:layout_width="281dp"
+     android:layout_height="40dp"
+     android:layout_marginTop="150dp"
+     android:background="@drawable/btbackgroun"
+     android:drawableLeft="@drawable/ic_person_black_24dp"
+     android:hint="Username"
+     android:inputType="text"
+     android:textSize="24dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/sign_in_gmail"
+     android:textColorHint="@android:color/white"
+     android:textColor="@android:color/white"/>
+
+ <EditText
+     android:id="@+id/pwd"
+     android:layout_width="291dp"
+     android:layout_height="45dp"
+     android:layout_marginTop="20dp"
+     android:background="@drawable/btbackgroun"
+     android:drawableLeft="@drawable/ic_lock_black_24dp"
+     android:hint="Password"
+     android:inputType="textPassword"
+     android:textColor="@android:color/white"
+     android:textColorHint="@android:color/white"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/login" />
+
+ <Button
+     android:layout_width="291dp"
+     android:layout_height="40dp"
+     android:id="@+id/btlogin"
+     app:layout_constraintTop_toBottomOf="@+id/pwd"
+     android:layout_marginTop="20dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:background="@drawable/login"
+     android:textColor="@android:color/white"
+     />
+
+ <Button
+     android:layout_width="291dp"
+     android:layout_height="40dp"
+     android:id="@+id/btregister"
+     app:layout_constraintTop_toBottomOf="@+id/btlogin"
+     android:layout_marginTop="20dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:background="@drawable/btregister"
+     android:textColor="@android:color/white"
+     />
+
+
+
+</android.support.constraint.ConstraintLayout>
